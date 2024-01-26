@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  :root{
+     --color-1: red;
+     --color-2: blue;
+     --color-3: gray;
+    --color-4:  black;
+    --color-5:  rgb(5, 2, 24);
+    --color-6:  white;
+    --color-7:  beige;
+  }
+
+  body{
+    background-color: rgb(0, 0, 17);
+  }
+
+  .header, .logo{
+    margin-top: 20px; margin-left: 30px;
+    transition: 0s;
+    opacity: 0;
+    transform: translateX(30px);
+    animation: moveup 5s linear forwards;
+  }
+
+  .header a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-2);
+  }
+
+  .header audio{
+    height: 20px;
+    float: right;
+    margin-right: 200px;
+    display: none;
+  }
+
+  @keyframes moveup{
+    100%{
+      opacity: 1;
+      transform: translateY(opx);
+    }
+  }
+
+ span {
+    font-size: 30px;
+    color: var(--color-3);
+ }
+
+ .me {
+  background-color: var(--color-5);
+  padding-top: 50px; padding-bottom: 50px;
+ }
+
+ .pix{
+  border-radius: 20px 0px 0px 20px;
+  margin-left: 50px;
+  background-color: var(--color-6);
+  border: 1px solid;
+ }
+
+ .pix img{
+  transition: 0s;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: moveup 5s linear forwards;
+ }
+
+ .pix h1{
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-2);
+  text-align: center;
+ }
+
+ .about{
+  border-radius: 0px 20px 20px 0px;
+   margin-right: 50px;
+   border: 1px solid;
+   border-color: var(--color-7);
+ }
+
+ .about h3{
+  text-decoration: underline;
+  color: var(--color-2);
+  text-align: center;
+  font-size: 30px;
+ }
+
+
+ .social {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px  
+}
+
+.social a{
+    font-size: 40px;
+    margin-top: 10px;
+    color: blueviolet;
+}
+
+.last__container {
+  background-color: blue;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+ .last__container a{
+      text-decoration: none;
+      text-align: center;
+      color: var(--color-6);
+      font-size: 30px;
+      transition: 0s;
+       opacity: 0;
+       transform: translateY(30px);
+       animation: moveup 5s linear infinite;
+    }
+
+ .about marquee{
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--color-6);
+ }
+
+ .about hr{
+  margin-left: 20px; margin-right: 20px;
+ }
+
+ .about p{
+  text-align: justify;
+  color: azure;
+  padding: 30px 30px 30px 30px;
+  font-size: 20px;
+ }
+
+ .about-me img{
+  height: 400px; width: 300px;
+  padding: 20px;
+ }
+
+ .about-me{
+  display: flex;
+  gap: 20px;
+ }
+
+ .breif{
+  margin-bottom: 20px; margin-left: 20px; margin-right: 20px;
+  background-color: var(--color-3);
+  border-radius: 10px;
+ }
+
+ .breif, h3, p{
+  padding-left: 20px;
+  font-weight: 700;
+ }
+
+ .footer{
+  background-color: var(--color-4);
+  height: 200px;
+  width: 100%;
+ }
+
+ .footer p{
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 100px;
+  color: var(--color-6);
+  text-align: center;
+ }
+
+ .footer span{
+  color: var(--color-1);
+  text-decoration: line-through;
+ }
+
+ @media (min-width: 100px) and (max-width: 500px){
+  .header, .logo{
+    margin-top: 10px; margin-left: 20px;
+  }
+
+  .header a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-2);
+  }
+
+  .about-me{
+      flex-direction: column;
+    }
+
+  .pix{
+      border-radius: 20px;
+      margin-left: 20px; margin-right: 20px;
+      background-color: white;
+      border: 1px solid;
+     }
+
+  .about-me img{
+      height: 400px; width: 100%;
+      padding: 20px;
+     }
+
+  .about{
+      border-radius: 20px;
+       margin-right: 20px; margin-left: 20px;
+       border: 1px solid;
+       border-color: var(--color-7);
+     }
+
+     .about p{
+      text-align: justify;
+      color: var(--color-6);
+      padding: 30px 30px 30px 30px;
+      font-size: 15px;
+     }
+
+     .social a{
+      font-size: 30px;
+      margin-top: 10px;
+      color: blueviolet;
+  
+  }
+  
+  .last__container {
+    background-color: blue;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-bottom: 10px;
+      }
+
+      .last__container a{
+        font-size: 20px;
+        padding: 10px;
+      } 
+
+      .about h3{
+        font-size: 20px;
+       }
+    
+}
